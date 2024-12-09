@@ -145,22 +145,7 @@ export const Experience = ({section}) => {
 
   return (
     <>
-      <CameraControls
-        ref={controls}
-        // {/* // disable MOUSE control  */}
-        mouseButtons={{
-          left: 0,
-          middle: 0,
-          right: 0,
-          wheel: 0,
-        }}
-        // {/* // disable touching on MOBILE  */}
-        touches={{
-          one: 0,
-          two: 0,
-          three: 0,
-        }}
-      />
+      <CameraControls ref={controls} />
       <mesh ref={box} visible={false}>
         <boxGeometry args={[0.5, 1, 0.2]} />
         <meshBasicMaterial color="lightblue" wireframe />
